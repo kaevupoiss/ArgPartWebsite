@@ -1,0 +1,77 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.nav_wrapper {
+    height: 100%;
+    width: 100%;
+
+}
+
+.kontakt {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+}
+.liikmed {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.band {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+.videod {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+}
+
+.pildid {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+
+.merch {
+    position: absolute;
+    top: 50%;
+    right: 27%;
+}
+
+.pealkiri {
+    font-size: 34pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 94, 38);
+    position: absolute;
+    transform: translate(50%,-50%);
+    top: 50%;
+    right: 50%;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 760px 1fr;
+    grid-template-rows: 1fr;
+}
+.content{
+    grid-column: 2/3;
+    background-color: paleturquoise;
+
+}
