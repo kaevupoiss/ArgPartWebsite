@@ -10,6 +10,7 @@ html {
 body {
     height: 100%;
     width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav_wrapper {
@@ -55,7 +56,6 @@ body {
 
 .pealkiri {
     font-size: 34pt;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(248, 94, 38);
     position: absolute;
     transform: translate(50%,-50%);
@@ -69,9 +69,59 @@ body {
     display: grid;
     grid-template-columns: 1fr 760px 1fr;
     grid-template-rows: 1fr;
+    
+}
+
+.wrapper::after {
+  content: "";
+  background: url("liiv.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 .content{
     grid-column: 2/3;
     background-color: paleturquoise;
+    
+}
+
+.title {
+    text-shadow: 2px 2px #ff0000;
+    color: paleturquoise;
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("partusfeetus.jpg");
+   
 
 }
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.social a {
+    font-size: 20pt;
+    font-weight: 600;
+    text-decoration: none;
+}
+.social a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 760px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .content {
+        grid-column: 1/2;
+    }
+}
+
