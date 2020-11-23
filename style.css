@@ -11,8 +11,21 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background: url("liiv.jpg");
+    background-size: contain;
 }
+#tahakskoju {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 
+}
+#tahakskoju img {
+    width: 80px;
+    
+}
 .nav_wrapper {
     height: 100%;
     width: 100%;
@@ -66,13 +79,14 @@ body {
 .wrapper {
     min-height: 100%;
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 760px 1fr;
     grid-template-rows: 1fr;
     
 }
 
-.wrapper::after {
+/*.wrapper::after {
   content: "";
   background: url("liiv.jpg");
   background-size: contain;
@@ -83,7 +97,7 @@ body {
   right: 0;
   position: absolute;
   z-index: -1;   
-}
+}*/
 .content{
     grid-column: 2/3;
     background-color: paleturquoise;
@@ -108,13 +122,84 @@ body {
 .social a {
     font-size: 20pt;
     font-weight: 600;
+    text-transform: uppercase;
     text-decoration: none;
 }
 .social a:hover {
     color: yellowgreen;
     text-decoration: underline;
 }
+.andmed input {
+    display: block;
+}
+.andmed form {
+    display: grid;
+    padding: 20px;  
+}
+.andmed textarea {
+    resize: none;
+}
+.andmed button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: orangered;
+}
+.andmed button:hover {
+    background-color: rgb(231, 255, 17);
+    transition: background-color 1s ease-in-out;
+}
+.andmed label {
+    margin-top: 10px;
+}
+.liige {
+    display: grid;
+    padding: 20px;
+}
+.right .bio {
+    padding-right: 20px;
+    grid-column: 1/2;
+}
+.left .bio {
+    padding-left: 20px;
 
+}   
+.liige img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.left {
+    grid-template-columns: 30% 1fr;
+}
+.right {
+    grid-template-columns: 1fr 30%;
+}
+.right img {
+    grid-column: 2/3;
+}
+.ajalugu {
+    color: peru;
+    margin: 20px;
+    text-justify: auto;
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+.vidjod {
+    margin: 20px;
+
+}
+.galerii {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.galerii img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 760px) {
     .wrapper {
