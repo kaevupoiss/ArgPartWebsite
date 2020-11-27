@@ -29,51 +29,84 @@ body {
 .nav_wrapper {
     height: 100%;
     width: 100%;
+    background-image: url("vesi.jpg");
+    background-size: 20%;
 
+}
+.nav_wrapper div:not(:nth-child(1)) span {
+    font-size: 20px;
+    background-color: black;
+    padding: 2px;
+    
+}
+.nav_wrapper div:not(:nth-child(1)) a:visited {
+    color: inherit;
+}
+.nav_wrapper div:not(:nth-child(1)) img {
+    width: 80px;  
+    display: block;
+    margin-bottom: 4px;
 }
 
 .kontakt {
     position: absolute;
-    top: 30%;
-    right: 40%;
+    top: 27%;
+    right: 38%;
+    color: fuchsia;
 }
 .liikmed {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 27%;
+    left: 38%;
+    color: greenyellow;
 }
 
 .band {
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 72%;
+    left: 38%;
+    color: rgb(21, 44, 247);
 }
 
 .videod {
     position: absolute;
-    top: 70%;
-    right: 40%;
+    top: 72%;
+    right: 38%;
+    color: coral;
 }
 
 .pildid {
     position: absolute;
     top: 50%;
     left: 27%;
+    color: yellow;
 }
 
 .merch {
     position: absolute;
     top: 50%;
     right: 27%;
+    color: violet;
 }
 
-.pealkiri {
+/*.pealkiri {
     font-size: 34pt;
     color: rgb(248, 94, 38);
     position: absolute;
     transform: translate(50%,-50%);
     top: 50%;
     right: 50%;
+}
+.pealkiri img {
+    height: 20px;
+    width: 20px;
+}*/
+.logo img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    right: 46%;
 }
 
 .wrapper {
@@ -100,16 +133,16 @@ body {
 }*/
 .content{
     grid-column: 2/3;
-    background-color: paleturquoise;
+    background-color: rgb(201, 63, 201);
     
 }
 
 .title {
-    text-shadow: 2px 2px #ff0000;
-    color: paleturquoise;
-    font-size: 48pt;
+    text-shadow: 2px 2px rgb(239, 252, 58);
+    color: rgb(33, 207, 230);
+    font-size: 38pt;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     background-image: url("partusfeetus.jpg");
    
 
@@ -122,6 +155,7 @@ body {
 .social a {
     font-size: 20pt;
     font-weight: 600;
+    background-color: black;
     text-transform: uppercase;
     text-decoration: none;
 }
