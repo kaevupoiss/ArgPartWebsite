@@ -35,7 +35,7 @@ body {
 }
 .nav_wrapper div:not(:nth-child(1)) span {
     font-size: 20px;
-    background-color: black;
+    background-color: rgb(251, 255, 0);
     padding: 2px;
     
 }
@@ -52,13 +52,13 @@ body {
     position: absolute;
     top: 27%;
     right: 38%;
-    color: fuchsia;
+    color: rgb(162, 0, 255);
 }
 .liikmed {
     position: absolute;
     top: 27%;
     left: 38%;
-    color: greenyellow;
+    color: rgb(0, 47, 255);
 }
 
 .band {
@@ -72,14 +72,14 @@ body {
     position: absolute;
     top: 72%;
     right: 38%;
-    color: coral;
+    color: rgb(255, 0, 0);
 }
 
 .pildid {
     position: absolute;
     top: 50%;
     left: 27%;
-    color: yellow;
+    color: purple;
 }
 
 .merch {
@@ -102,11 +102,11 @@ body {
     width: 20px;
 }*/
 .logo img {
-    width: 120px;
-    height: 120px;
+    width: 430px;
+    height: 430px;
     position: absolute;
-    top: 50%;
-    right: 46%;
+    top: 30%;
+    right: 37%;
 }
 
 .wrapper {
@@ -155,7 +155,7 @@ body {
 .social a {
     font-size: 20pt;
     font-weight: 600;
-    background-color: black;
+    background-color:white;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -212,8 +212,8 @@ body {
     grid-column: 2/3;
 }
 .ajalugu {
-    color: peru;
-    margin: 20px;
+    color: black;
+    margin: 30px;
     text-justify: auto;
 }
 iframe {
