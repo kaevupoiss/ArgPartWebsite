@@ -1,0 +1,46 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.social a {
+    font-size: 20pt;
+    font-weight: 600;
+    background-color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+.andmed input {
+    display: block;
+}
+
+.andmed form {
+    display: grid;
+    padding: 20px;  
+}
+
+.andmed textarea {
+    resize: none;
+}
+
+.andmed button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: orangered;
+}
+
+.andmed button:hover {
+    background-color: rgb(231, 255, 17);
+    transition: background-color 1s ease-in-out;
+}
+
+.andmed label {
+    margin-top: 10px;
+}

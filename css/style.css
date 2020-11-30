@@ -1,0 +1,78 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background: url("../img/liiv.jpg");
+    background-size: contain;
+}
+
+#tahakskoju {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#tahakskoju img {
+    width: 80px; 
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 760px 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.content{
+    grid-column: 2/3;
+    background-color: rgb(201, 63, 201);
+    height: 100%;
+}
+
+.title {
+    text-shadow: 2px 2px rgb(239, 252, 58);
+    color: rgb(33, 207, 230);
+    font-weight: bold;
+    font-size: 38pt;
+    text-align: left;
+    min-height: 135px;
+    background-image: url("../img/partusfeetus.jpg");
+}
+
+.title h1 {
+    margin-left: 15px;
+    height: 135px;
+    line-height: 135px;
+}
+
+@media screen and (max-width: 1000px) {
+    .title h1 {
+        margin-left: 110px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .content {
+        grid-column: 1/2;
+    }
+}
+

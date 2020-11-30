@@ -1,0 +1,15 @@
+.ajalugu {
+    color: black;
+    margin: 30px;
+    text-justify: auto;
+}
+
+.ajalugu h1 {
+    margin-bottom: 20px;
+}
+
+.ajalugu p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}

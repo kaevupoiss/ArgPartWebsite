@@ -1,0 +1,36 @@
+.liige {
+    display: grid;
+    padding: 20px;
+}
+
+.liige p {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.right .bio {
+    padding-right: 20px;
+    grid-column: 1/2;
+}
+
+.left .bio {
+    padding-left: 20px;
+} 
+
+.liige img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.left {
+    grid-template-columns: 30% 1fr;
+}
+
+.right {
+    grid-template-columns: 1fr 30%;
+}
+
+.right img {
+    grid-column: 2/3;
+}

@@ -1,0 +1,11 @@
+.vidjod {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: calc(100% - 135px);
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
