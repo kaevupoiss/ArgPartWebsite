@@ -63,7 +63,7 @@ body {
     width: 100%;
     background-image: url("../img/vesi.jpg");
     background-size: 30%;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .nav_wrapper div:not(:nth-child(1)) span {
