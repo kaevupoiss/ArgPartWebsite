@@ -13,8 +13,9 @@ body {
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-repeat: repeat;
+    background-color: rgb(25, 172, 230);
     background-attachment: scroll;
-    background: url("../img/liiv.jpg");
+    background-image: url("../img/liiv.jpg");
     background-size: contain;
 }
 
@@ -25,7 +26,22 @@ body {
 }
 
 #tahakskoju img {
-    width: 80px; 
+    width: 80px;
+    transform: scale(1,1);
+    animation: scaleAnimation ease-out 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    transition: transform ease-in 1.5s;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(200,200);
+    }
+    100% {
+        transform: scale(1,1);
+    }
 }
 
 .wrapper {

@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .kontakt {
     position: absolute;
     top: 20%;
@@ -59,6 +63,7 @@
     width: 100%;
     background-image: url("../img/vesi.jpg");
     background-size: 30%;
+    overflow: clip;
 }
 
 .nav_wrapper div:not(:nth-child(1)) span {
@@ -75,6 +80,7 @@
     width: 80px;  
     display: block;
     margin-bottom: 4px;
+    transition: transform ease-in 1.5s;
 }
 
 @media screen and (max-width: 760px) {
@@ -83,6 +89,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: auto;
+        overflow-y: auto;
     }
 
     .logo {
